@@ -1,0 +1,49 @@
+/*******************
+ Breadcrumb and page title
+*******************/
+
+.page-breadcrumb {
+    padding: 20px 30px;
+    background: white;
+    .page-title{
+        color: $themecolor;
+        padding-bottom: 20px;
+        font-weight: 400;
+        line-height: 30px;
+        font-size: 21px;
+    }
+    .breadcrumb {
+        padding: 0px;
+        margin: 0px;
+        background: transparent;
+        font-size: 16px;
+        .breadcrumb-item+.breadcrumb-item::before {
+            content: "\e649";
+            font-family: themify;
+            color: $gray-500;
+            font-size: 14px;
+        }
+        .breadcrumb-item {
+            margin: 0;
+            font-weight: 300;
+            a {
+                color: $themecolor;
+                font-size: 14px;
+               &:hover {
+                  color: #014c8c;
+               }
+            }
+            &.active {
+                color: #99abb4;
+            }
+        }
+    }
+    // button danger
+    .upgrade-btn {
+        .btn-danger {
+        &:hover {
+                box-shadow: 0 14px 26px -12px rgba(239, 83, 80, 0.42), 0 4px 23px 0 rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(239, 83, 80, 0.2)!important;
+            }
+        }
+    }
+}

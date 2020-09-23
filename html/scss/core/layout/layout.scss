@@ -1,0 +1,179 @@
+// App
+
+/*============================================================== 
+ For all pages 
+ ============================================================== */
+
+#main-wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+.page-wrapper {
+    background: $body-bg;
+    position: relative;
+}
+
+.page-wrapper>.container-fluid {
+    padding: 30px;
+    min-height: calc(100vh - 180px);
+}
+
+
+/*******************
+ Footer
+*******************/
+
+.footer {
+    color: $sidebar-text-dark;
+    padding: 17px 15px;
+    font-size: $h5-font-size;
+    font-weight: 300;
+    border-top: 1px solid rgba(48, 99, 150, 0.13);
+    background:$theme-light;
+    a {
+        color: #0275d8;
+        &:hover {
+            color: #014c8c;
+        }
+    }
+}
+
+/*******************
+ Vertical layout
+*******************/
+
+#main-wrapper[data-layout="vertical"] {
+    /*Vertical*/
+    .topbar .top-navbar .navbar-header {
+        //width: $sidebar-width-full;
+    }
+
+    /*sidebar type*/
+    &[data-sidebartype="full"] {
+        .page-wrapper {
+            margin-left: $sidebar-width-full;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+/*******************
+ Vertical responsive layout
+*******************/
+
+@include media-breakpoint-up(lg) {
+    #main-wrapper[data-layout="vertical"] {
+
+        /*Vertical*/
+        &[data-sidebartype="full"] {
+            .topbar .top-navbar .navbar-header {
+                width: $sidebar-width-full;
+            }
+        }
+        /*Sidebar position*/
+        &[data-sidebar-position="fixed"][data-sidebartype="full"] {
+            .topbar .top-navbar .navbar-collapse {
+                margin-left: $sidebar-width-full;
+            }
+        }
+        &[data-sidebar-position="fixed"][data-sidebartype="mini-sidebar"] {
+            .topbar .top-navbar .navbar-collapse {
+                margin-left: $sidebar-width-mini;
+            }
+        }
+       
+        /*Vertical with mini-sidebar*/
+        &[data-sidebartype="mini-sidebar"] {
+            .topbar .top-navbar .navbar-header {
+                 width: $sidebar-width-full;
+                .logo-text {
+                    display: block;
+                }
+                &.expand-logo {
+                    width: $sidebar-width-full;
+                    .logo-text {
+                        display: block;
+                    }
+                }
+            }
+        }
+        /*Fixed sidebar with minisidebar*/
+        &[data-sidebar-position="fixed"][data-sidebartype="mini-sidebar"] {
+            .topbar .top-navbar .navbar-collapse {
+                margin-left: $sidebar-width-mini;
+            }
+        }
+        &[data-sidebartype="mini-sidebar"] {
+            .page-wrapper {
+                margin-left: $sidebar-width-full;
+            }
+            .left-sidebar {
+                width: $sidebar-width-full;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    #main-wrapper {
+        &[data-sidebartype="mini-sidebar"] {
+            .left-sidebar {
+               display: none;
+            }
+            &.show-sidebar {
+                .left-sidebar {
+                    display: block;
+                    .sidebar-nav {
+                        padding: 5px;
+                    }
+                }
+            }
+        }
+        /*Header position*/
+        &[data-layout="vertical"][data-header-position="fixed"][data-sidebar-position="fixed"] {
+            .topbar .top-navbar {
+                .navbar-collapse {
+                    position: relative;
+                    top: $topbar-height;
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(xs) {
+    #main-wrapper {
+        &[data-sidebartype="mini-sidebar"] {
+            .left-sidebar {
+               display: none;
+            }
+            .page-wrapper {
+                margin-left: 0;
+            }
+            &.show-sidebar {
+                .left-sidebar {
+                    display: block;
+                    width: $sidebar-width-full;
+                    .sidebar-nav {
+                        .sidebar-item {
+                            .sidebar-link {
+                                .hide-menu {
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
