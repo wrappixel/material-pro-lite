@@ -121,7 +121,7 @@ File: scss
 @include media-breakpoint-down(xs) {
     .error-box {
         .error-body {
-            padding-top: 10%!important;
+            padding-top: 5%!important;
             .error-title {
                 font-size: 100px;
                 font-weight: 600;
@@ -236,7 +236,7 @@ File: scss
             font-size: 16px;
             color: #54667a;
         }
-        .form-control {
+        .form-control, .form-select {
             background-color: transparent;
             background-position: center bottom, center calc(100% - 1px);
             background-repeat: no-repeat;
