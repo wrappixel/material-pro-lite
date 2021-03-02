@@ -14,7 +14,7 @@
 
 <!-- Description of Template -->
 <p>
-  WrapPixel has carefully crafted a fully-responsive design template that can be executed for any of your projects. While you use the free version of MaterialPro Bootstrap Lite it provides amazing layouts, pages templates, widgets, elements and much more. It’s one of the amazing free dashboard template bootstrap 4 that uses essential Bootstrap components in its pre-set design patterns to maintain the consistency and reliability in the design.
+  WrapPixel has carefully crafted a fully-responsive design template that can be executed for any of your projects. While you use the free version of MaterialPro Bootstrap Lite it provides amazing layouts, pages templates, widgets, elements and much more. It’s one of the amazing free dashboard template bootstrap 5 that uses essential Bootstrap components in its pre-set design patterns to maintain the consistency and reliability in the design.
 </p>
 
 
@@ -74,7 +74,7 @@
 <h2>Licensing</h2>
 <ul>
   <li>
-    <p>Copyright 2020 Wrappixel (<a href="https://www.wrappixel.com/" rel="nofollow">https://www.wrappixel.com/</a>)</p>
+    <p>Copyright 2021 Wrappixel (<a href="https://www.wrappixel.com/" rel="nofollow">https://www.wrappixel.com/</a>)</p>
   </li>
   <li>
     <p>Licensed under MIT (<a href="https://www.wrappixel.com/license/">https://www.wrappixel.com/license/</a>)</p>
@@ -96,7 +96,7 @@
 <h2>Useful Links</h2>
 <ul>
 <li><a href="https://www.wrappixel.com/templates/category/admin-template/">Admin Template</a> from WrapPixel</li>
-<li><a href="https://www.wrappixel.com/">Bootstrap 4 Templates</a> from WrapPixel</li>
+<li><a href="https://www.wrappixel.com/">Bootstrap 5 Templates</a> from WrapPixel</li>
 <li><a href="https://www.wrappixel.com/templates/category/bootstrap-admin-templates/">Bootstrap Admin Template</a> from WrapPixel</li>
 <li><a href="https://www.wrappixel.com/templates/category/react-templates/">React Dashboard</a> from WrapPixel</li>
 <li><a href="https://www.wrappixel.com/templates/category/vuejs-templates/">Vue Templates</a> from WrapPixel</li>
