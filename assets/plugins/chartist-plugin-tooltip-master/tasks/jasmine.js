@@ -7,22 +7,22 @@
  * Link: https://github.com/gruntjs/grunt-contrib-jasmine
  */
 
-'use strict';
+"use strict";
 
 module.exports = function (grunt) {
   return {
     dist: {
       src: [
-        'bower_components/chartist/dist/chartist.js',
-        '<%= pkg.config.src %>/scripts/<%= pkg.config.src_name %>.js'
+        "bower_components/chartist/dist/chartist.js",
+        "<%= pkg.config.src %>/scripts/<%= pkg.config.src_name %>.js",
       ],
       options: {
-        specs: '<%= pkg.config.test %>/spec/**/spec-*.js',
-        helpers: '<%= pkg.config.test %>/spec/**/helper-*.js',
+        specs: "<%= pkg.config.test %>/spec/**/spec-*.js",
+        helpers: "<%= pkg.config.test %>/spec/**/helper-*.js",
         phantomjs: {
-          'ignore-ssl-errors': true
-        }
-      }
-    }
+          "ignore-ssl-errors": true,
+        },
+      },
+    },
   };
 };

@@ -7,19 +7,21 @@
  * Link: https://github.com/gruntjs/grunt-contrib-uglify
  */
 
-'use strict';
+"use strict";
 
 module.exports = function (grunt) {
   return {
     dist: {
       options: {
-        banner: '<%= pkg.config.banner %>',
+        banner: "<%= pkg.config.banner %>",
         sourceMap: true,
-        sourceMapIncludeSources: true
+        sourceMapIncludeSources: true,
       },
       files: {
-        '<%= pkg.config.dist %>/<%= pkg.config.src_name %>.min.js': ['<%= pkg.config.dist %>/<%= pkg.config.src_name %>.js']
-      }
-    }
+        "<%= pkg.config.dist %>/<%= pkg.config.src_name %>.min.js": [
+          "<%= pkg.config.dist %>/<%= pkg.config.src_name %>.js",
+        ],
+      },
+    },
   };
 };

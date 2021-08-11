@@ -4,8 +4,19 @@ Author: Themedesigner
 Email: niravjoshi87@gmail.com
 File: scss
 */
-@media (min-width:1600px) {
-  .col-xlg-1,.col-xlg-10,.col-xlg-11,.col-xlg-12,.col-xlg-2,.col-xlg-3,.col-xlg-4,.col-xlg-5,.col-xlg-6,.col-xlg-7,.col-xlg-8,.col-xlg-9 {
+@media (min-width: 1600px) {
+  .col-xlg-1,
+  .col-xlg-10,
+  .col-xlg-11,
+  .col-xlg-12,
+  .col-xlg-2,
+  .col-xlg-3,
+  .col-xlg-4,
+  .col-xlg-5,
+  .col-xlg-6,
+  .col-xlg-7,
+  .col-xlg-8,
+  .col-xlg-9 {
     float: left;
   }
 
@@ -14,7 +25,7 @@ File: scss
     -webkit-flex: 0 0 100%;
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
-    max-width: 100%;  
+    max-width: 100%;
   }
 
   .col-xlg-11 {
@@ -22,7 +33,7 @@ File: scss
     -webkit-flex: 0 0 91.66666667%;
     -ms-flex: 0 0 91.66666667%;
     flex: 0 0 91.66666667%;
-    max-width: 91.66666667%;  
+    max-width: 91.66666667%;
   }
 
   .col-xlg-10 {
@@ -30,7 +41,7 @@ File: scss
     -webkit-flex: 0 0 83.33333333%;
     -ms-flex: 0 0 83.33333333%;
     flex: 0 0 83.33333333%;
-    max-width: 83.33333333%;    
+    max-width: 83.33333333%;
   }
 
   .col-xlg-9 {
@@ -38,7 +49,7 @@ File: scss
     -webkit-flex: 0 0 75%;
     -ms-flex: 0 0 75%;
     flex: 0 0 75%;
-    max-width: 75%;    
+    max-width: 75%;
   }
 
   .col-xlg-8 {
@@ -46,7 +57,7 @@ File: scss
     -webkit-flex: 0 0 66.66666667%;
     -ms-flex: 0 0 66.66666667%;
     flex: 0 0 66.66666667%;
-    max-width: 66.66666667%;   
+    max-width: 66.66666667%;
   }
 
   .col-xlg-7 {
@@ -54,7 +65,7 @@ File: scss
     -webkit-flex: 0 0 58.33333333%;
     -ms-flex: 0 0 58.33333333%;
     flex: 0 0 58.33333333%;
-    max-width: 58.33333333%;   
+    max-width: 58.33333333%;
   }
 
   .col-xlg-6 {
@@ -62,7 +73,7 @@ File: scss
     -webkit-flex: 0 0 50%;
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
-    max-width: 50%;  
+    max-width: 50%;
   }
 
   .col-xlg-5 {
@@ -70,7 +81,7 @@ File: scss
     -webkit-flex: 0 0 41.66666667%;
     -ms-flex: 0 0 41.66666667%;
     flex: 0 0 41.66666667%;
-    max-width: 41.66666667%;    
+    max-width: 41.66666667%;
   }
 
   .col-xlg-4 {
@@ -78,7 +89,7 @@ File: scss
     -webkit-flex: 0 0 33.33333333%;
     -ms-flex: 0 0 33.33333333%;
     flex: 0 0 33.33333333%;
-    max-width: 33.33333333%;  
+    max-width: 33.33333333%;
   }
 
   .col-xlg-3 {
@@ -94,7 +105,7 @@ File: scss
     -webkit-flex: 0 0 16.66666667%;
     -ms-flex: 0 0 16.66666667%;
     flex: 0 0 16.66666667%;
-    max-width: 16.66666667%;  
+    max-width: 16.66666667%;
   }
 
   .col-xlg-1 {
@@ -102,7 +113,7 @@ File: scss
     -webkit-flex: 0 0 8.33333333%;
     -ms-flex: 0 0 8.33333333%;
     flex: 0 0 8.33333333%;
-    max-width: 8.33333333%;  
+    max-width: 8.33333333%;
   }
 
   .col-xlg-pull-12 {
@@ -262,7 +273,18 @@ File: scss
   }
 }
 
-.col-xlg-1,.col-xlg-10,.col-xlg-11,.col-xlg-12,.col-xlg-2,.col-xlg-3,.col-xlg-4,.col-xlg-5,.col-xlg-6,.col-xlg-7,.col-xlg-8,.col-xlg-9 {
+.col-xlg-1,
+.col-xlg-10,
+.col-xlg-11,
+.col-xlg-12,
+.col-xlg-2,
+.col-xlg-3,
+.col-xlg-4,
+.col-xlg-5,
+.col-xlg-6,
+.col-xlg-7,
+.col-xlg-8,
+.col-xlg-9 {
   position: relative;
   min-height: 1px;
   padding-right: 15px;
