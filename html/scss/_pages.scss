@@ -13,19 +13,6 @@ File: scss
   width: 100%;
 }
 
-.boxed #main-wrapper {
-  width: 100%;
-  max-width: 1300px;
-  margin: 0 auto;
-  box-shadow: 0 0 60px rgba(0, 0, 0, 0.1);
-  .sidebar-footer {
-    position: absolute;
-  }
-  .footer {
-    display: none;
-  }
-}
-
 .page-wrapper {
   background: $bodycolor;
   padding-bottom: 60px;
@@ -83,65 +70,9 @@ File: scss
     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
     -webkit-box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
     -moz-box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
-    border-color: $border;
+    border-color: $border-color;
     .dropdown-item {
       padding: 7px 1.5rem;
-    }
-  }
-  ul.dropdown-user {
-    padding: 0px;
-    width: 270px;
-    li {
-      list-style: none;
-      padding: 0px;
-      margin: 0px;
-      &.divider {
-        height: 1px;
-        margin: 9px 0;
-        overflow: hidden;
-        background-color: $border;
-      }
-      .dw-user-box {
-        padding: 10px 15px;
-        .u-img {
-          width: 80px;
-          display: inline-block;
-          vertical-align: top;
-          img {
-            width: 100%;
-            border-radius: 5px;
-          }
-        }
-        .u-text {
-          display: inline-block;
-          padding-left: 10px;
-          h4 {
-            margin: 0px;
-          }
-          p {
-            margin-bottom: 2px;
-            font-size: 14px;
-          }
-          .btn {
-            color: $white;
-            padding: 5px 10px;
-            display: inline-block;
-            &:hover {
-              background: $danger-dark;
-            }
-          }
-        }
-      }
-      a {
-        padding: 9px 15px;
-        display: block;
-        color: $bodytext;
-        &:hover {
-          background: $light;
-          color: $themecolor;
-          text-decoration: none;
-        }
-      }
     }
   }
 }
@@ -177,24 +108,6 @@ File: scss
   }
 }
 
-.mini-sidebar .top-navbar {
-  .navbar-header {
-    width: 60px;
-    text-align: center;
-  }
-}
-
-.logo-center {
-  .top-navbar {
-    .navbar-header {
-      position: absolute;
-      left: 0;
-      right: 0;
-      margin: 0 auto;
-    }
-  }
-}
-
 /*******************
  Breadcrumb and page title
 *******************/
@@ -223,7 +136,7 @@ File: scss
       font-size: 11px;
     }
     .breadcrumb-item.active {
-      color: $muted;
+      color: $text-muted;
     }
   }
 }
@@ -231,386 +144,8 @@ File: scss
 /*******************
  Right side toggle
 *******************/
-
-@-webkit-keyframes rotate {
-  from {
-    -webkit-transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-  }
-}
-
-@-moz-keyframes rotate {
-  from {
-    -moz-transform: rotate(0deg);
-  }
-  to {
-    -moz-transform: rotate(360deg);
-  }
-}
-
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.right-side-toggle {
-  position: relative;
-}
-
-.right-side-toggle i {
-  -webkit-transition-property: -webkit-transform;
-  -webkit-transition-duration: 1s;
-  -moz-transition-property: -moz-transform;
-  -moz-transition-duration: 1s;
-  transition-property: transform;
-  transition-duration: 1s;
-  -webkit-animation-name: rotate;
-  -webkit-animation-duration: 2s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-  -moz-animation-name: rotate;
-  -moz-animation-duration: 2s;
-  -moz-animation-iteration-count: infinite;
-  -moz-animation-timing-function: linear;
-  animation-name: rotate;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  position: absolute;
-  top: 18px;
-  left: 18px;
-}
-
-.right-sidebar {
-  position: fixed;
-  right: -240px;
-  width: 240px;
-  display: none;
-  z-index: 1100;
-  background: $white;
-  top: 0px;
-  padding-bottom: 20px;
-  height: 100%;
-  box-shadow: 5px 1px 40px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-  .rpanel-title {
-    display: block;
-    padding: 24px 20px;
-    color: $white;
-    text-transform: uppercase;
-    font-size: 15px;
-    background: $themecolor;
-    span {
-      float: right;
-      cursor: pointer;
-      font-size: 11px;
-      &:hover {
-        color: $white;
-      }
-    }
-  }
-  .r-panel-body {
-    padding: 20px;
-    ul {
-      margin: 0px;
-      padding: 0px;
-      li {
-        list-style: none;
-        padding: 5px 0;
-      }
-    }
-  }
-}
-
-.shw-rside {
-  right: 0px;
-  width: 240px;
-  display: block;
-}
-
-.chatonline {
-  img {
-    margin-right: 10px;
-    float: left;
-    width: 30px;
-  }
-  li a {
-    padding: 13px 0;
-    float: left;
-    width: 100%;
-    span {
-      color: $bodytext;
-      small {
-        display: block;
-        font-size: 10px;
-      }
-    }
-  }
-}
-
-/*******************
- Right side toggle
-*******************/
-
-ul#themecolors {
-  display: block;
-  li {
-    display: inline-block;
-    &:first-child {
-      display: block;
-    }
-    a {
-      width: 50px;
-      height: 50px;
-      display: inline-block;
-      margin: 5px;
-      color: transparent;
-      position: relative;
-      &.working:before {
-        content: "\f00c";
-        font-family: "FontAwesome";
-        font-size: 18px;
-        line-height: 50px;
-        width: 50px;
-        height: 50px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        color: $white;
-        text-align: center;
-      }
-    }
-  }
-}
-
-.default-theme {
-  background: $muted;
-}
-
-.green-theme {
-  background: $success;
-}
-
-.yellow-theme {
-  background: $warning;
-}
-
-.red-theme {
-  background: $danger;
-}
-
 .blue-theme {
   background: $info;
-}
-
-.purple-theme {
-  background: $purple;
-}
-
-.megna-theme {
-  background: $megna;
-}
-
-.default-dark-theme {
-  background: $dark;
-  /* Old browsers */
-  background: -moz-linear-gradient(
-    left,
-    $dark 0%,
-    $dark 23%,
-    $muted 23%,
-    $muted 99%
-  );
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(
-    left,
-    $dark 0%,
-    $dark 23%,
-    $muted 23%,
-    $muted 99%
-  );
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(
-    to right,
-    $dark 0%,
-    $dark 23%,
-    $muted 23%,
-    $muted 99%
-  );
-}
-
-.green-dark-theme {
-  background: $dark;
-  /* Old browsers */
-  background: -moz-linear-gradient(
-    left,
-    $dark 0%,
-    $dark 23%,
-    $success 23%,
-    $success 99%
-  );
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(
-    left,
-    $dark 0%,
-    $dark 23%,
-    #00c292 23%,
-    $success 99%
-  );
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(
-    to right,
-    $dark 0%,
-    $dark 23%,
-    $success 23%,
-    $success 99%
-  );
-}
-
-.yellow-dark-theme {
-  background: $dark;
-  /* Old browsers */
-  background: -moz-linear-gradient(
-    left,
-    $dark 0%,
-    $dark 23%,
-    $danger 23%,
-    $danger 99%
-  );
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(
-    left,
-    $dark 0%,
-    $dark 23%,
-    $danger 23%,
-    $danger 99%
-  );
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(
-    to right,
-    $dark 0%,
-    $dark 23%,
-    $danger 23%,
-    $danger 99%
-  );
-}
-
-.blue-dark-theme {
-  background: $dark;
-  /* Old browsers */
-  background: -moz-linear-gradient(
-    left,
-    $dark 0%,
-    $dark 23%,
-    $info 23%,
-    $info 99%
-  );
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(
-    left,
-    $dark 0%,
-    $dark 23%,
-    $info 23%,
-    $info 99%
-  );
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(
-    to right,
-    $dark 0%,
-    $dark 23%,
-    $info 23%,
-    $info 99%
-  );
-}
-
-.purple-dark-theme {
-  background: $dark;
-  /* Old browsers */
-  background: -moz-linear-gradient(
-    left,
-    $dark 0%,
-    $dark 23%,
-    $purple 23%,
-    $purple 99%
-  );
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(
-    left,
-    $dark 0%,
-    $dark 23%,
-    $purple 23%,
-    $purple 99%
-  );
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(
-    to right,
-    $dark 0%,
-    $dark 23%,
-    $purple 23%,
-    $purple 99%
-  );
-}
-
-.megna-dark-theme {
-  background: $dark;
-  /* Old browsers */
-  background: -moz-linear-gradient(
-    left,
-    $dark 0%,
-    $dark 23%,
-    $megna 23%,
-    $megna 99%
-  );
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(
-    left,
-    $dark 0%,
-    $dark 23%,
-    $megna 23%,
-    $megna 99%
-  );
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(
-    to right,
-    $dark 0%,
-    $dark 23%,
-    $megna 23%,
-    $megna 99%
-  );
-}
-
-.red-dark-theme {
-  background: $dark;
-  /* Old browsers */
-  background: -moz-linear-gradient(
-    left,
-    $dark 0%,
-    $dark 23%,
-    $danger 23%,
-    $danger 99%
-  );
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(
-    left,
-    $dark 0%,
-    $dark 23%,
-    $danger 23%,
-    $danger 99%
-  );
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(
-    to right,
-    $dark 0%,
-    $dark 23%,
-    $danger 23%,
-    $danger 99%
-  );
 }
 
 /*******************
@@ -627,12 +162,12 @@ ul#themecolors {
 
 .footer {
   bottom: 0;
-  color: $bodytext;
+  color: $body-color;
   left: 0px;
   padding: 17px 15px;
   position: absolute;
   right: 0;
-  border-top: 1px solid $border;
+  border-top: 1px solid $border-color;
   background: $white;
 }
 
@@ -645,50 +180,8 @@ ul#themecolors {
   .card-subtitle {
     font-weight: 300;
     margin-bottom: 15px;
-    color: $muted;
+    color: $text-muted;
   }
-}
-
-.card-inverse .card-blockquote .blockquote-footer,
-.card-inverse .card-link,
-.card-inverse .card-subtitle,
-.card-inverse .card-text {
-  color: rgba(255, 255, 255, 0.65);
-}
-
-.card-success {
-  background: $success;
-  border-color: $success;
-}
-
-.card-danger {
-  background: $danger;
-  border-color: $danger;
-}
-
-.card-warning {
-  background: $warning;
-  border-color: $warning;
-}
-
-.card-info {
-  background: $info;
-  border-color: $info;
-}
-
-.card-primary {
-  background: $primary;
-  border-color: $primary;
-}
-
-.card-dark {
-  background: $inverse;
-  border-color: $inverse;
-}
-
-.card-megna {
-  background: $megna;
-  border-color: $megna;
 }
 
 /*============================================================== 
@@ -729,7 +222,7 @@ ul#themecolors {
   float: $rgt;
   a {
     cursor: pointer;
-    color: $bodytext;
+    color: $body-color;
     opacity: 0.7;
     padding-left: 7px;
     font-size: 13px;
@@ -746,81 +239,6 @@ ul#themecolors {
 .collapsing {
   -webkit-transition: height 0.08s ease;
   transition: height 0.08s ease;
-}
-
-.card-info {
-  background: $info;
-  border-color: $info;
-}
-
-.card-primary {
-  background: $primary;
-  border-color: $primary;
-}
-
-.card-outline-info {
-  border-color: $info;
-  .card-header {
-    background: $info;
-    border-color: $info;
-  }
-}
-
-.card-outline-inverse {
-  border-color: $inverse;
-  .card-header {
-    background: $inverse;
-    border-color: $inverse;
-  }
-}
-
-.card-outline-warning {
-  border-color: $warning;
-  .card-header {
-    background: $warning;
-    border-color: $warning;
-  }
-}
-
-.card-outline-success {
-  border-color: $success;
-  .card-header {
-    background: $success;
-    border-color: $success;
-  }
-}
-
-.card-outline-danger {
-  border-color: $danger;
-  .card-header {
-    background: $danger;
-    border-color: $danger;
-  }
-}
-
-.card-outline-primary {
-  border-color: $primary;
-  .card-header {
-    background: $primary;
-    border-color: $primary;
-  }
-}
-
-/*============================================================== 
-Breadcrumb
- ============================================================== */
-
-.bc-colored {
-  .breadcrumb-item,
-  .breadcrumb-item a {
-    color: $white;
-    &.active {
-      opacity: 0.7;
-    }
-  }
-  .breadcrumb-item + .breadcrumb-item::before {
-    color: rgba(255, 255, 255, 0.4);
-  }
 }
 
 .breadcrumb {
@@ -840,7 +258,7 @@ ul.list-icons {
     margin: 5px 0;
     transition: 0.2s ease-in;
     a {
-      color: $bodytext;
+      color: $body-color;
       &:hover {
         color: $themecolor;
       }
@@ -981,18 +399,18 @@ Dashboard1 chart
 .c3-chart-arcs-title,
 .c3-legend-item {
   font-family: $bodyfont;
-  fill: $bodytext;
+  fill: $body-color;
 }
 
 html body #visitor .c3-chart-arcs-title {
   font-size: 18px;
-  fill: $muted;
+  fill: $text-muted;
 }
 
 .stylish-table {
   thead th {
     font-weight: 400;
-    color: $muted;
+    color: $text-muted;
     border: 0px;
     border-bottom: 1px;
   }
@@ -1113,14 +531,14 @@ Dashboard3 chart
 #visitfromworld {
   path.jvectormap-region.jvectormap-element {
     stroke-width: 1px;
-    stroke: $muted;
+    stroke: $text-muted;
   }
 }
 
 .jvectormap-zoomin,
 .jvectormap-zoomout,
 .jvectormap-goback {
-  background: $muted;
+  background: $text-muted;
 }
 
 .browser {
@@ -1208,7 +626,7 @@ File upload
 
 .fileinput {
   .input-group-addon {
-    border-right: 1px solid $border;
+    border-right: 1px solid $border-color;
   }
 }
 
@@ -1295,7 +713,7 @@ widget-chart-page product review
     a.nav-link {
       border: 0px;
       padding: 15px 20px;
-      color: $bodytext;
+      color: $body-color;
       &.active {
         border-bottom: 2px solid $themecolor;
         color: $themecolor;
@@ -1325,7 +743,7 @@ Form addons page
       clear: both;
       font-weight: 400;
       line-height: 1.42857143;
-      color: $bodytext;
+      color: $body-color;
       white-space: nowrap;
       &:hover {
         color: $themecolor;
@@ -1431,7 +849,7 @@ Form Material page
 }
 
 .floating-labels label {
-  color: $bodytext;
+  color: $body-color;
   position: absolute;
   cursor: auto;
   top: 5px;
@@ -1590,7 +1008,7 @@ Pagination
   }
   li.disabled a {
     background: $light;
-    color: $border;
+    color: $border-color;
   }
 }
 
@@ -1740,7 +1158,7 @@ Form summernote
   border: 1px solid $form-brd;
   .panel-heading {
     padding: 6px 10px 10px;
-    border-bottom: 1px solid $border;
+    border-bottom: 1px solid $border-color;
   }
 }
 
@@ -1807,7 +1225,7 @@ Table-Layout
 }
 
 .color-table.muted-table thead th {
-  background-color: $muted;
+  background-color: $text-muted;
   color: $white;
 }
 
@@ -1884,9 +1302,9 @@ Table-Layout
 }
 
 .color-bordered-table.muted-bordered-table {
-  border: 2px solid $muted;
+  border: 2px solid $text-muted;
   thead th {
-    background-color: $muted;
+    background-color: $text-muted;
     color: $white;
   }
 }
@@ -2039,7 +1457,7 @@ Table-Layout
 .full-color-table.full-muted-table {
   background-color: rgba(152, 166, 173, 0.2);
   thead th {
-    background-color: $muted;
+    background-color: $text-muted;
     border: 0;
     color: $white;
   }
@@ -2047,7 +1465,7 @@ Table-Layout
     border: 0;
   }
   tr:hover {
-    background-color: $muted;
+    background-color: $text-muted;
     color: $white;
   }
 }
@@ -2129,7 +1547,7 @@ table.dataTable thead .sorting:after {
   text-decoration: none;
   cursor: pointer;
   *cursor: hand;
-  color: $bodytext;
+  color: $body-color;
   border: 1px solid transparent;
   border-radius: 2px;
 }
@@ -2145,7 +1563,7 @@ table.dataTable thead .sorting:after {
 .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover,
 .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:active {
   cursor: default;
-  color: $bodytext;
+  color: $body-color;
   border: 1px solid transparent;
   background: transparent;
   box-shadow: none;
@@ -2159,7 +1577,7 @@ table.dataTable thead .sorting:after {
 
 .dataTables_wrapper .dataTables_paginate .paginate_button:active {
   outline: none;
-  background-color: $bodytext;
+  background-color: $body-color;
 }
 
 .dataTables_wrapper .dataTables_paginate .ellipsis {
@@ -2171,7 +1589,7 @@ Table- responsive
 ******************/
 
 .tablesaw-bar .btn-group label {
-  color: $bodytext !important;
+  color: $body-color !important;
 }
 
 /*******************
@@ -2244,7 +1662,7 @@ Icon list fontawesom
     cursor: pointer;
     line-height: 60px;
     white-space: nowrap;
-    color: $bodytext;
+    color: $body-color;
     &:hover {
       color: $dark;
     }
@@ -2269,7 +1687,7 @@ Icon list fontawesom
   .col-3 {
     border-radius: $radius;
     &:hover {
-      background-color: $extra-light;
+      background-color: $gray-100;
     }
   }
 }
@@ -2298,7 +1716,7 @@ Gridstack Dragable portlet
 }
 
 .grid-stack > .grid-stack-item > .grid-stack-item-content {
-  border: 1px solid $border;
+  border: 1px solid $border-color;
 }
 
 /*******************
@@ -2449,7 +1867,7 @@ Date paginator page
       a {
         padding: 0 5px;
         height: 60px;
-        border: 1px solid $border;
+        border: 1px solid $border-color;
         float: left;
         position: relative;
       }
@@ -2490,7 +1908,7 @@ Vertical tabs
   .tabs-vertical {
     width: 150px;
     border-bottom: 0px;
-    border-right: 1px solid $border;
+    border-right: 1px solid $border-color;
     display: table-cell;
     vertical-align: top;
     li .nav-link {
@@ -2537,7 +1955,7 @@ Vertical tabs
     a.nav-link {
       border: 0px;
       margin-right: 3px;
-      color: $bodytext;
+      color: $body-color;
       &.active {
         background: $themecolor;
         color: $white;
@@ -2644,12 +2062,12 @@ list and media
 }
 
 .list-group-item.disabled {
-  color: $muted;
+  color: $text-muted;
   background: $light;
 }
 
 .media {
-  border: 1px solid $border;
+  border: 1px solid $border-color;
   margin-bottom: 10px;
   padding: 15px;
 }
@@ -2674,7 +2092,7 @@ User card page
       margin: 0px;
     }
     a {
-      color: $bodytext;
+      color: $body-color;
       &:hover {
         color: $themecolor;
       }
@@ -2822,7 +2240,7 @@ Timeline page
   position: relative;
   width: 46%;
   padding: 20px;
-  border: 1px solid $border;
+  border: 1px solid $border-color;
   border-radius: $radius;
   -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
@@ -2835,9 +2253,9 @@ Timeline page
   top: 26px;
   right: -8px;
   border-top: 8px solid transparent;
-  border-right: 0 solid $border;
+  border-right: 0 solid $border-color;
   border-bottom: 8px solid transparent;
-  border-left: 8px solid $border;
+  border-left: 8px solid $border-color;
 }
 
 .timeline > li > .timeline-panel:after {
@@ -2966,7 +2384,7 @@ Horizontal Timeline page
 }
 
 .dd3-handle:before {
-  color: $bodytext;
+  color: $body-color;
   top: 7px;
 }
 
@@ -3968,7 +3386,7 @@ Seach listing Page
   li {
     list-style: none;
     padding: 15px 0;
-    border-bottom: 1px solid $border;
+    border-bottom: 1px solid $border-color;
     h3 {
       margin: 0px;
       font-size: 18px;
@@ -4059,7 +3477,7 @@ Pricing Page
   margin-top: 0px;
   .pricing-body {
     padding: 60px 0;
-    background: $extra-light;
+    background: $gray-100;
     border: 1px solid #ddd;
   }
   .price-table-content .price-row {
@@ -4127,7 +3545,7 @@ chat application Page
     float: left;
     z-index: 9;
     top: 0px;
-    border-right: 1px solid $border;
+    border-right: 1px solid $border-color;
     .open-panel {
       display: none;
       cursor: pointer;
@@ -4156,7 +3574,7 @@ chat application Page
             padding: 20px;
             &:hover,
             &.active {
-              background: $extra-light;
+              background: $gray-100;
             }
           }
         }
@@ -4178,12 +3596,12 @@ chat application Page
       position: relative;
       .form-control {
         border: none;
-        border-top: 1px solid $border;
+        border-top: 1px solid $border-color;
         resize: none;
         height: 80px;
         padding-right: 180px;
         &:focus {
-          border-color: $border;
+          border-color: $border-color;
         }
       }
       .custom-send {
@@ -4191,7 +3609,7 @@ chat application Page
         right: 20px;
         bottom: 10px;
         .cst-icon {
-          color: $bodytext;
+          color: $body-color;
           margin-right: 10px;
         }
       }
@@ -4210,7 +3628,7 @@ Email inbox Page
       border-radius: 0px;
       border-left: 3px solid transparent;
       a {
-        color: $bodytext;
+        color: $body-color;
       }
       &.active,
       &:hover {
@@ -4234,7 +3652,7 @@ Email inbox Page
   .max-texts {
   }
   a {
-    color: $bodytext;
+    color: $body-color;
     padding: 2px 0 3px 0;
     overflow: hidden;
     vertical-align: middle;
@@ -4260,7 +3678,7 @@ Contact app Page
 
 .left-aside {
   position: absolute;
-  border-right: 1px solid $border;
+  border-right: 1px solid $border-color;
   padding: 20px;
   width: 250px;
   height: 100%;
@@ -4293,12 +3711,12 @@ Contact app Page
     &.divider {
       margin: 10px 0;
       height: 1px;
-      background: $border;
+      background: $border-color;
     }
     a {
       padding: 15px 10px;
       display: block;
-      color: $bodytext;
+      color: $body-color;
       &:hover {
         color: $themecolor;
       }

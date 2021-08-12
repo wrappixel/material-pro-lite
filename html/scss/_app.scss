@@ -29,7 +29,7 @@ body {
   font-family: $bodyfont;
   margin: 0;
   overflow-x: hidden;
-  color: $bodytext;
+  color: $body-color;
   font-weight: 300;
 }
 
@@ -43,7 +43,7 @@ a:focus {
   text-decoration: none;
 }
 a.link {
-  color: $headingtext;
+  color: $headings-color;
   &:hover,
   &:focus {
     color: $themecolor;
@@ -71,7 +71,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: $headingtext;
+  color: $headings-color;
   font-family: $headingfont;
   font-weight: 400;
 }
@@ -137,7 +137,7 @@ Blockquote
 
 html body blockquote {
   border-left: 5px solid $themecolor;
-  border: 1px solid $border;
+  border: 1px solid $border-color;
   padding: 15px;
 }
 
@@ -404,19 +404,19 @@ html body {
     border: none;
   }
   .b-r {
-    border-right: 1px solid $border;
+    border-right: 1px solid $border-color;
   }
   .b-l {
-    border-left: 1px solid $border;
+    border-left: 1px solid $border-color;
   }
   .b-b {
-    border-bottom: 1px solid $border;
+    border-bottom: 1px solid $border-color;
   }
   .b-t {
-    border-top: 1px solid $border;
+    border-top: 1px solid $border-color;
   }
   .b-all {
-    border: 1px solid $border;
+    border: 1px solid $border-color;
   }
 }
 /*******************
@@ -458,7 +458,7 @@ Text Colors
 }
 
 .text-muted {
-  color: $muted !important;
+  color: $text-muted !important;
 }
 
 .text-warning {
@@ -494,7 +494,7 @@ html body {
   }
 
   .text-dark {
-    color: $bodytext;
+    color: $body-color;
   }
   .text-themecolor {
     color: $themecolor;
@@ -551,7 +551,7 @@ html body {
     background-color: $light-info;
   }
   .bg-light-extra {
-    background-color: $extra-light;
+    background-color: $gray-100;
   }
 
   .bg-light-warning {
@@ -996,7 +996,7 @@ Buttons
     color: $white !important;
     margin-bottom: 0px;
     &.btn-secondary {
-      color: $bodytext !important;
+      color: $body-color !important;
     }
   }
 }
@@ -1640,7 +1640,7 @@ Checkbox
       -webkit-transition: 0.3s ease-in-out;
       background-color: $white;
       border-radius: 1px;
-      border: 1px solid $border;
+      border: 1px solid $border-color;
       content: "";
       display: inline-block;
       height: 17px;
@@ -1826,7 +1826,7 @@ Radios
       -webkit-transition: border 0.5s ease-in-out;
       background-color: $white;
       border-radius: 50%;
-      border: 1px solid $border;
+      border: 1px solid $border-color;
       content: "";
       display: inline-block;
       height: 17px;
@@ -2066,7 +2066,7 @@ Megamenu
         margin: 0px;
         a {
           text-decoration: none;
-          color: $bodytext;
+          color: $body-color;
         }
       }
     }
@@ -2081,7 +2081,7 @@ ul.list-style-none {
   li {
     list-style: none;
     a {
-      color: $bodytext;
+      color: $body-color;
       padding: 8px 0px;
       display: block;
       text-decoration: none;
@@ -2096,7 +2096,7 @@ dropdown-item
 ******************/
 .dropdown-item {
   padding: 8px 1rem;
-  color: $bodytext;
+  color: $body-color;
 }
 /*******************
 Custom-select
@@ -2115,7 +2115,7 @@ textarea {
 Form-control
 ******************/
 .form-control {
-  color: $bodytext;
+  color: $body-color;
   min-height: 38px;
   display: initial;
 }
@@ -2145,7 +2145,7 @@ form label {
   padding-top: 0px;
 }
 .form-bordered .form-group {
-  border-bottom: 1px solid $border;
+  border-bottom: 1px solid $border-color;
   padding-bottom: 20px;
 }
 /*******************

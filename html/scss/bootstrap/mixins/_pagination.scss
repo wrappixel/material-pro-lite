@@ -1,6 +1,11 @@
 // Pagination
 
-@mixin pagination-size($padding-y, $padding-x, $font-size, $border-radius) {
+@mixin pagination-size(
+  $padding-y,
+  $padding-x,
+  $font-size,
+  $border-color-radius
+) {
   .page-link {
     padding: $padding-y $padding-x;
     @include font-size($font-size);
@@ -10,19 +15,19 @@
     @if $pagination-margin-start == (-$pagination-border-width) {
       &:first-child {
         .page-link {
-          @include border-start-radius($border-radius);
+          @include border-start-radius($border-color-radius);
         }
       }
 
       &:last-child {
         .page-link {
-          @include border-end-radius($border-radius);
+          @include border-end-radius($border-color-radius);
         }
       }
     } @else {
       //Add border-radius to all pageLinks in case they have left margin
       .page-link {
-        @include border-radius($border-radius);
+        @include border-radius($border-color-radius);
       }
     }
   }

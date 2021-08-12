@@ -5,7 +5,7 @@
 
 @mixin button-variant(
   $background,
-  $border,
+  $border-color,
   $color: color-contrast($background),
   $hover-background:
     if(
@@ -16,8 +16,8 @@
   $hover-border:
     if(
       $color == $color-contrast-light,
-      shade-color($border, 20%),
-      tint-color($border, 10%)
+      shade-color($border-color, 20%),
+      tint-color($border-color, 10%)
     ),
   $hover-color: color-contrast($hover-background),
   $active-background:
@@ -29,17 +29,17 @@
   $active-border:
     if(
       $color == $color-contrast-light,
-      shade-color($border, 25%),
-      tint-color($border, 10%)
+      shade-color($border-color, 25%),
+      tint-color($border-color, 10%)
     ),
   $active-color: color-contrast($active-background),
   $disabled-background: $background,
-  $disabled-border: $border,
+  $disabled-border: $border-color,
   $disabled-color: color-contrast($disabled-background)
 ) {
   color: $color;
   @include gradient-bg($background);
-  border-color: $border;
+  border-color: $border-color;
   @include box-shadow($btn-box-shadow);
 
   &:hover {
@@ -56,11 +56,15 @@
     @if $enable-shadows {
       @include box-shadow(
         $btn-box-shadow,
-        0 0 0 $btn-focus-width rgba(mix($color, $border, 15%), 0.5)
+        0 0 0 $btn-focus-width rgba(mix($color, $border-color, 15%), 0.5)
       );
     } @else {
       // Avoid using mixin so we can pass custom focus shadow properly
-      box-shadow: 0 0 0 $btn-focus-width rgba(mix($color, $border, 15%), 0.5);
+      box-shadow: 0
+        0
+        0
+        $btn-focus-width
+        rgba(mix($color, $border-color, 15%), 0.5);
     }
   }
 
@@ -79,11 +83,15 @@
       @if $enable-shadows {
         @include box-shadow(
           $btn-active-box-shadow,
-          0 0 0 $btn-focus-width rgba(mix($color, $border, 15%), 0.5)
+          0 0 0 $btn-focus-width rgba(mix($color, $border-color, 15%), 0.5)
         );
       } @else {
         // Avoid using mixin so we can pass custom focus shadow properly
-        box-shadow: 0 0 0 $btn-focus-width rgba(mix($color, $border, 15%), 0.5);
+        box-shadow: 0
+          0
+          0
+          $btn-focus-width
+          rgba(mix($color, $border-color, 15%), 0.5);
       }
     }
   }
@@ -149,9 +157,9 @@
 }
 
 // Button sizes
-@mixin button-size($padding-y, $padding-x, $font-size, $border-radius) {
+@mixin button-size($padding-y, $padding-x, $font-size, $border-color-radius) {
   padding: $padding-y $padding-x;
   @include font-size($font-size);
   // Manually declare to provide an override to the browser default
-  @include border-radius($border-radius, 0);
+  @include border-radius($border-color-radius, 0);
 }

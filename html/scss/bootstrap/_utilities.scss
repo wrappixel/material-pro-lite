@@ -74,14 +74,14 @@ $utilities: map-merge(
     "border": (
       property: border,
       values: (
-        null: $border-width solid $border-color,
+        null: $border-color-width solid $border-color-color,
         0: 0,
       ),
     ),
     "border-top": (
       property: border-top,
       values: (
-        null: $border-width solid $border-color,
+        null: $border-color-width solid $border-color-color,
         0: 0,
       ),
     ),
@@ -89,14 +89,14 @@ $utilities: map-merge(
       property: border-right,
       class: border-end,
       values: (
-        null: $border-width solid $border-color,
+        null: $border-color-width solid $border-color-color,
         0: 0,
       ),
     ),
     "border-bottom": (
       property: border-bottom,
       values: (
-        null: $border-width solid $border-color,
+        null: $border-color-width solid $border-color-color,
         0: 0,
       ),
     ),
@@ -104,7 +104,7 @@ $utilities: map-merge(
       property: border-left,
       class: border-start,
       values: (
-        null: $border-width solid $border-color,
+        null: $border-color-width solid $border-color-color,
         0: 0,
       ),
     ),
@@ -122,7 +122,7 @@ $utilities: map-merge(
     "border-width": (
       property: border-width,
       class: border,
-      values: $border-widths,
+      values: $border-color-widths,
     ),
     // Sizing utilities
     "width":
@@ -595,41 +595,41 @@ $utilities: map-merge(
       property: border-radius,
       class: rounded,
       values: (
-        null: $border-radius,
+        null: $border-color-radius,
         0: 0,
-        1: $border-radius-sm,
-        2: $border-radius,
-        3: $border-radius-lg,
+        1: $border-color-radius-sm,
+        2: $border-color-radius,
+        3: $border-color-radius-lg,
         circle: 50%,
-        pill: $border-radius-pill,
+        pill: $border-color-radius-pill,
       ),
     ),
     "rounded-top": (
       property: border-top-left-radius border-top-right-radius,
       class: rounded-top,
       values: (
-        null: $border-radius,
+        null: $border-color-radius,
       ),
     ),
     "rounded-end": (
       property: border-top-right-radius border-bottom-right-radius,
       class: rounded-end,
       values: (
-        null: $border-radius,
+        null: $border-color-radius,
       ),
     ),
     "rounded-bottom": (
       property: border-bottom-right-radius border-bottom-left-radius,
       class: rounded-bottom,
       values: (
-        null: $border-radius,
+        null: $border-color-radius,
       ),
     ),
     "rounded-start": (
       property: border-bottom-left-radius border-top-left-radius,
       class: rounded-start,
       values: (
-        null: $border-radius,
+        null: $border-color-radius,
       ),
     ),
     "visibility": (

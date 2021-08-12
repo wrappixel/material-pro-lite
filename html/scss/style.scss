@@ -13,9 +13,6 @@ File: scss
 //This is for the components (Required file)
 @import "components";
 
-//This is for the widgets (Required file)
-@import "widgets/widgets";
-
 //This is for the responsive (Required file)
 @import "responsive";
 
@@ -28,4 +25,5 @@ File: scss
 @import "icons/simple-line-icons/css/simple-line-icons.css";
 @import "icons/themify-icons/themify-icons.css";
 
+@import "widgets";
 @import "landingpage";

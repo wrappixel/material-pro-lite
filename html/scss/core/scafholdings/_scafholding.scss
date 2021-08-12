@@ -33,7 +33,7 @@ a.link {
 }
 
 .box {
-  border-radius: $border-radius;
+  border-radius: $border-color-radius;
   padding: 10px;
 }
 
@@ -86,7 +86,7 @@ Thumb size
 }
 
 .radius {
-  border-radius: $border-radius;
+  border-radius: $border-color-radius;
 }
 
 /*******************
@@ -335,45 +335,10 @@ Card
 .card-group {
   margin-bottom: 20px;
   .card {
-    border-right: 1px solid $border-color;
+    border-right: 1px solid $border-color-color;
   }
 }
 
-.card-fullscreen {
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100%;
-  z-index: 9999;
-  overflow: auto;
-}
-
-.oh {
-  overflow: hidden;
-}
-.card-hover {
-  -webkit-transition: all 0.25s ease;
-  -o-transition: all 0.25s ease;
-  -moz-transition: all 0.25s ease;
-  transition: all 0.25s ease;
-  &:hover {
-    webkit-transform: translateY(-4px) scale(1.01);
-    -moz-transform: translateY(-4px) scale(1.01);
-    -ms-transform: translateY(-4px) scale(1.01);
-    -o-transform: translateY(-4px) scale(1.01);
-    transform: translateY(-4px) scale(1.01);
-    -webkit-box-shadow: 0 14px 24px rgba(62, 57, 107, 0.1);
-    box-shadow: 0 14px 24px rgba(62, 57, 107, 0.1);
-  }
-}
-.draggable-cards .card-header {
-  cursor: move;
-}
-.card-moved .card {
-  background: $info;
-  color: $white;
-}
 /*******************
 Labels
 *******************/
@@ -383,7 +348,7 @@ Labels
   line-height: 13px;
   color: $white;
   font-weight: 400;
-  border-radius: $border-radius;
+  border-radius: $border-color-radius;
   font-size: 75%;
 }
 
