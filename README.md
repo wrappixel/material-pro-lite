@@ -1,7 +1,7 @@
 <!-- # material-pro-lite -->
 <!-- Heading of Template -->
 <h1>
-  <a href="https://www.wrappixel.com/demos/free-admin-templates/material-pro-lite/html/">Material Pro Bootstrap Admin Lite</a>
+  <a href="https://www.wrappixel.com/templates/materialpro-lite/">Material Pro Bootstrap Admin Lite</a>
 </h1>
 
 <!-- Main image of Template -->
@@ -59,7 +59,7 @@
 <h2>Resources</h2>
 <ul>
 <li>  
-  Live Demo: <a href="https://www.wrappixel.com/demos/free-admin-templates/material-pro-lite/html/" rel="nofollow">https://www.wrappixel.com/demos/free-admin-templates/material-pro-lite/html/</a>
+  Live Demo: <a href="https://demos.wrappixel.com/free-admin-templates/bootstrap/materialpro-bootstrap-free/landingpage/index.html" rel="nofollow">https://demos.wrappixel.com/free-admin-templates/bootstrap/materialpro-bootstrap-free/landingpage/index.html</a>
 </li>
 <li>
     Download Page: <a href="https://www.wrappixel.com/templates/materialpro-lite/" rel="nofollow">
@@ -89,7 +89,7 @@
 </a>
 <p>
    Checkout our premium version of Material Pro Bootstrap Admin for lots more features and ready to use page templates.<br>
-   <a href="https://www.wrappixel.com/demos/admin-templates/materialpro-bootstrap-latest/material-pro/src/material/index.html">Check Live Preview</a> | <a href="https://www.wrappixel.com/templates/materialpro/">Download</a>
+   <a href="https://demos.wrappixel.com/premium-admin-templates/bootstrap/materialpro-bootstrap/package/html/material/index.html">Check Live Preview</a> | <a href="https://www.wrappixel.com/templates/materialpro/">Download</a>
 </p>
 
 <!-- Useful Links of Template -->
