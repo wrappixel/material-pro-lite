@@ -137,14 +137,12 @@
             }
           } else if (!(e.isPlainObject(i) && "destroy" in i)) {
             s.height = "auto" == s.height ? x.parent().height() : s.height;
-            var S = e(w)
-              .addClass(s.wrapperClass)
-              .css({
-                position: "relative",
-                overflow: "hidden",
-                width: s.width,
-                height: s.height,
-              });
+            var S = e(w).addClass(s.wrapperClass).css({
+              position: "relative",
+              overflow: "hidden",
+              width: s.width,
+              height: s.height,
+            });
             x.css({ overflow: "hidden", width: s.width, height: s.height });
             var E = e(w)
                 .addClass(s.railClass)
