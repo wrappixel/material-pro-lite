@@ -158,22 +158,22 @@
 <tr>
 <td>
   <a href="https://www.wrappixel.com/templates/materialpro/" rel="nofollow" width="150px">
-    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2020/04/materialpro-bootstrap-admin-y.jpg" alt="MaterialPro Template  Bootstrap" style="max-width:150px;">
+    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2024/05/materialpro-bootstrap-admin-wpn.jpg" alt="MaterialPro Template  Bootstrap" style="max-width:150px;">
   </a>
 </td>
 <td>
   <a href="https://www.wrappixel.com/templates/materialpro-react-redux-admin/" rel="nofollow" width="150px">
-    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2020/04/materialpro-react-admin-y.jpg" alt="MaterialPro Template  React" style="max-width:150px;">
+    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2024/05/materialpro-react-admin-wpn.jpg" alt="MaterialPro Template  React" style="max-width:150px;">
   </a>
 </td>
 <td>
   <a href="https://www.wrappixel.com/templates/materialpro-vuetify-admin/" rel="nofollow" width="150px">
-    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2020/05/materialpro-vuejs-dashboard-template-20.jpg" alt="MaterialPro Template  Vue" style="max-width:150px;">
+    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2024/05/materialpro-vuetify-admin-wpn.jpg" alt="MaterialPro Template  Vue" style="max-width:150px;">
   </a>
 </td>
   <td>
   <a href="https://www.wrappixel.com/templates/materialpro-angular-dashboard/" rel="nofollow" width="150px">
-    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2020/04/materialpro-angular-admin-y.jpg" alt="MaterialPro Template  Angular" style="max-width:150px;">
+    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2024/05/materialpro-angular-admin-wpn.jpg" alt="MaterialPro Template  Angular" style="max-width:150px;">
   </a>
 </td>
 </tr>
