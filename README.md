@@ -6,7 +6,7 @@
 
 <!-- Main image of Template -->
 <a target="_blank" href="https://www.wrappixel.com/templates/materialpro-lite/">
-  <img src="https://www.wrappixel.com/wp-content/uploads/edd/2020/04/materialpro-bootstrap-lite-y.jpg" />
+  <img src="https://www.wrappixel.com/wp-content/uploads/edd/2024/05/materialpro-free-bootstrap-5-dashboard-wpn.jpg" />
 </a>
 
 <!-- <h4><a href="https://wrappixel.com/demos/free-admin-templates/material-pro-lite/html/index.html">Free Version Demo Link</a></h4> -->
@@ -210,7 +210,7 @@
 <!-- Upgrade to Premium version of Template -->
 <h2>Upgrade to Premium version</h2>
 <a target="_blank" href="https://www.wrappixel.com/templates/materialpro/">
-  <img src="https://www.wrappixel.com/wp-content/uploads/edd/2020/04/materialpro-bootstrap-admin-y.jpg" />
+  <img src="https://www.wrappixel.com/wp-content/uploads/edd/2024/05/materialpro-bootstrap-admin-wpn.jpg" />
 </a>
 <p>
    Checkout our premium version of Material Pro Bootstrap Admin for lots more features and ready to use page templates.<br>
