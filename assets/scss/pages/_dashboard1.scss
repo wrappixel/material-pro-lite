@@ -1,0 +1,107 @@
+// ----------------------------------------------
+// Dashboard1 Style
+// ----------------------------------------------
+
+.profiletimeline {
+    position: relative;
+    padding-left: 32px;
+    margin: 0px 0px 0 28px;
+    border-left: 1px solid var(--bs-border-color);
+
+    .sl-left {
+        margin-left: -60px;
+        z-index: 1;
+        margin-right: 15px;
+
+        img {
+            width: 56px;
+            height: 56px;
+            flex-shrink: 0;
+        }
+    }
+}
+
+.profiletimeline .sl-item {
+    margin-top: 8px;
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.profiletimeline .sl-date {
+    font-size: 12px;
+    color: $text-muted;
+}
+
+
+.message-box {
+    .message-widget {
+        a {
+            &:hover {
+                background: var(--bs-light-primary);
+            }
+
+            .user-img {
+                width: 48px;
+                flex-shrink: 0;
+
+                .profile-status {
+                    border: 2px solid var(--bs-white);
+                    height: 10px;
+                    left: 33px;
+                    position: absolute;
+                    top: -1px;
+                    width: 10px;
+                }
+
+                .online {
+                    background: var(--bs-success);
+                }
+
+                .busy {
+                    background: var(--bs-danger);
+                }
+
+                .away {
+                    background: var(--bs-warning);
+                }
+
+                .offline {
+                    background: var(--bs-warning);
+                }
+            }
+
+            .mail-desc,
+            .time {
+                color: var(--bs-border-color);
+            }
+        }
+    }
+}
+
+
+.little-profile {
+    .pro-img {
+        margin-top: -80px;
+        margin-bottom: 14px;
+    }
+}
+
+.sr-only {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.unlimited-access {
+    padding: 18px 22px 25px;
+    margin: 0 -5px;
+
+    .unlimited-access-img {
+        margin: -35px -5px 0 -43px;
+    }
+}
